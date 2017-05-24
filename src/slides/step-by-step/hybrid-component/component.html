@@ -1,0 +1,24 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Komponenten migrieren
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Controller schon als Klasse implementiert
+        <ul>
+          <li>Kleine Anpassungen für DI</li>
+          <li>Wird zu Komponenten-Klasse</li>
+        </ul>
+      </li>
+      <li>Template muss Angular 2+ Expression Language verwenden</li>
+      <li>Registrierung ändern: Angular 2+ UND AngularJS Module
+        <ul>
+          <li>Downgrade wenn in AngularJS Code verwendet</li>
+          <li><code>declaration</code> und <code>entryComponent</code> an Angular 2+ Module</li>
+        </ul>
+      </li>
+      <li>Verwendete Komponenten upgraden oder ersetzen</li>
+    </ul>
+  </div>
+</div>

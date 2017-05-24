@@ -1,0 +1,24 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Komponente downgraden
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+import {downgradeComponent} from "@angular/upgrade/static";
+
+@Component({
+  selector: 'app-list',
+  template: '&lt;div&gt;&lt;/div&gt;'
+})
+export class ListComponent {}
+
+angular.module('app')
+  .directive('list', downgradeComponent({
+    component: ListComponent
+  }) as angular.IDirectiveFactory);
+</pre>
+    <!--@formatter:on-->
+  </div>
+</div>

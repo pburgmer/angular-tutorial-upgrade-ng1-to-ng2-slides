@@ -1,0 +1,32 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Service upgraden
+  </div>
+
+  <div w11k-slide-part-source="content">
+
+    <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+import {OpaqueToken} from "@angular/core";
+export const OtherService = new OpaqueToken("OtherService");
+
+export function otherServiceFactory(i: any) {
+  return i.get('otherService');
+}
+export const otherServiceProvider = {
+  provide: OtherService,
+  useFactory: otherServiceFactory,
+  deps: ['$injector']
+};
+</pre>
+    <!--@formatter:on-->
+
+    <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+export class MyService {
+  constructor(@Inject(OtherService) private other) {}
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+</div>
