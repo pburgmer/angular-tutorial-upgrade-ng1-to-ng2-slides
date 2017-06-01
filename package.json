@@ -1,13 +1,13 @@
 {
   "author": "w11k GmbH",
-  "name": "angular-presentation-i18n",
+  "name": "angular-tutorial-upgrade-ng1-to-ng2-slides",
   "version": "1.0.0",
   "homepage": "http://www.thecodecampus.de",
-  "description": "TheCodeCampus Presentation - Angular i18n",
+  "description": "TheCodeCampus Tutorial - Migrate AngularJS to Angular",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/pburgmer/angular-presentation-i18n-slides.git"
+    "url": "https://github.com/pburgmer/angular-tutorial-upgrade-ng1-to-ng2-slides.git"
   },
 
   "dependencies": {},
