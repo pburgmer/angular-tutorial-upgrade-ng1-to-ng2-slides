@@ -45,6 +45,7 @@
 
       'step-by-step/style-guide/title',
       'step-by-step/style-guide/style-guide',
+      'step-by-step/style-guide/es6',
       // 'step-by-step/style-guide/demo',
 
       'step-by-step/hybrid-bootstrap/title',
