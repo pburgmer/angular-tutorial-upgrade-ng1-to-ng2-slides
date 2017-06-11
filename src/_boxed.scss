@@ -1,4 +1,8 @@
-@import "compass";
+@import "boxed-variables";
+
+// ****************************************************************************************************
+// font
+// ****************************************************************************************************
 
 @font-face {
   font-family: 'SourceCodePro';
@@ -37,9 +41,13 @@
   font-style: italic;
 }
 
-  html, body, * {
-    font-family: 'Aller';
-  }
+html, body, * {
+  font-family: 'Aller';
+}
+
+// ****************************************************************************************************
+// tcc-2016
+// ****************************************************************************************************
 
 
 .tcc-2016 .slides {
@@ -124,7 +132,7 @@
       padding: 0;
       overflow: hidden;
 
-      background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+      background: $tcc-slide-title-background;
 
       h1 {
         margin: 0;
@@ -150,11 +158,11 @@
 
         .content {
           background-color: $tcc-gray;
-          background: linear-gradient(to right, $tcc-gray, lighten($tcc-gray, 7%));
+          background: $tcc-slide-title-center-background;
 
           transform: rotate(3deg);
-          padding: 8vw 0;
-          margin: -4.5vw 0 -4.5vw;
+          padding: 8% 5%;
+          margin: -4.5% 0 -4.5%;
         }
         h1, h1 small {
           color: white
@@ -212,7 +220,7 @@
         margin-top: $header-height * -1;
         margin-bottom: $header-offset;
 
-        background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+        background: $tcc-regular-header-background;
 
         display: flex;
         align-items: stretch;
@@ -223,7 +231,7 @@
           margin-bottom: $header-offset * -1;
           padding-bottom: $header-offset;
 
-          background: url('assets/images/tcc-header-bg-gray.svg') 96% top no-repeat;
+          background: url('assets/images/tcc-header-bg-gray.svg') right top no-repeat;
           background-size: auto 100%;
           width: $slide-padding-horizontal + (($header-height) * 0.7967 * 0.5);
           padding-right: 35px;
@@ -343,7 +351,7 @@
               position: absolute;
               content: "<>";
               font-weight: 200;
-              color: $w11k-slides-color-1;
+              color: $tcc-orange;
               margin-left: -1.4em;
             }
 
@@ -373,7 +381,7 @@
                 &:before {
                   position: absolute;
                   content: '-';
-                  color: $w11k-slides-color-1;
+                  color: $tcc-orange;
                   margin-left: -0.8em;
                   padding-left: 0.1em;
                 }
@@ -449,7 +457,7 @@
                 &:before {
                   position: absolute;
                   content: "<>";
-                  color: $w11k-slides-color-1;
+                  color: $tcc-orange;
                   margin-left: -0.4em;
                 }
               }
@@ -457,7 +465,7 @@
               > li:last-of-type:not(.as-headline) {
                 &:after {
                   content: " </>";
-                  color: $w11k-slides-color-1;
+                  color: $tcc-orange;
                 }
               }
             }
@@ -468,7 +476,6 @@
           @extend .table;
           @extend .table-striped;
           @extend .table-condensed;
-          @extend .table-bordered;
 
           margin-bottom: 0;
 
@@ -500,10 +507,10 @@
           font-size: 1.5em;
           margin: 2em 10vw;
           padding: 0.3em 0 0.3em 1em;
-          border-left: 0.1em solid $tcc-gray-lighter;
+          border-left: 0.1em solid $tcc-quote-highlight;
 
           cite {
-            color: $tcc-gray-lighter;
+            color: $tcc-quote-highlight;
             font-size: 0.666em;
           }
         }
@@ -515,7 +522,7 @@
         flex: none;
 
         height: 32px;
-        background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+        background: $tcc-regular-footer-background;
 
         display: flex;
         align-items: stretch;
